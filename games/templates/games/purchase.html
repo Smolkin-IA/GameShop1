@@ -1,6 +1,13 @@
 {% extends "games/base.html" %}
+{% load static %}
 
 {% block title %}Подтверждение покупки{% endblock %}
+
+<!-- Подключение стилей для этого шаблона -->
+{% block extra_css %}
+    {{ block.super }}
+    
+{% endblock %}
 
 {% block 'content' %}
 <div class="d-flex flex-row align-items-center justify-content-center" style="height:100%">
